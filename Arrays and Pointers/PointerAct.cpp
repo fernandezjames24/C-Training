@@ -426,7 +426,6 @@ void sortArray() {
 int *returnPointer(int *a, int *b) {
 	
 	
-	int *sum = new int;
 	return (*a > *b) ? a : b;
 	
 }
