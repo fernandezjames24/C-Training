@@ -427,8 +427,7 @@ int *returnPointer(int *a, int *b) {
 	
 	
 	int *sum = new int;
-	*sum = *a + *b;
-	return sum;
+	return (*a > *b) ? a : b;
 	
 }
 
