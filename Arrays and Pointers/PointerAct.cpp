@@ -237,6 +237,7 @@ void permutation(char *a, int *first, int *length) {
 #pragma region
 void findHighest() {
 
+	int buffer = 0;
 	int elem;
 	std::cout << "Input total number of elements (1 to 100) : ";
 	std::cin >> elem;
@@ -252,10 +253,11 @@ void findHighest() {
 	}
 
 
-	int buffer;
+	
 	for (int i = 0; i < elem; i++)
 	{
-		if (arr[i] > arr[i + 1]) {
+
+		if (arr[i] > buffer) {
 			buffer = arr[i];
 		}
 	}
